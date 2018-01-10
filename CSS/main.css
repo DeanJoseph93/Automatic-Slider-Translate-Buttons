@@ -1,0 +1,471 @@
+/* =====================   CSS RESET SECTION ==== */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio,
+video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+img, iframe{vertical-align: top;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, canvas, video { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/*-------------------------------
+General Section
+-------------------------------*/
+
+
+body{
+    /*background-color: #f1f2f3;*/
+    background-color: lightsteelblue;
+    font-family: 'Anton', sans-serif;
+}
+
+
+.container{
+    width: 960px;
+    margin: auto;
+}
+
+.clearFix{
+    clear:both;
+}
+
+
+/*-------------------------------
+Header Section
+-------------------------------*/
+
+
+.topHead{
+    background-color: steelblue;
+}
+
+.leftContainer{
+    width: 297px;
+    float:left;
+}
+
+
+
+#headBoxTitle{
+    background-color: lightblue;
+    height: 100px;
+}
+
+
+#headBoxTitle h1{
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 23px;
+    text-align: center;
+    padding: 46px;
+
+}
+
+
+
+/*-------------------------------
+Nav Section
+-------------------------------*/
+nav{
+    position: relative;
+}
+
+nav li{
+    display: block;
+    width: 122px;
+    float: left;
+}
+
+
+nav a{
+
+    font-family: 'Old Standard TT', serif;
+    font-weight: 500;
+    display: block;
+    font-size: 17px;
+    line-height: 32px;
+    float: left;
+    text-transform: capitalize;
+    color: #333333;
+    padding: 45px 0px 23px;
+    width: 105px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.list2 a:hover{
+    color: #333333;
+    background-color: lightblue;
+    /*background-color: lightblue;*/
+}
+
+
+
+
+.sub-menu {
+    position: relative;
+}
+
+.subClass {
+    opacity:0;
+    position: absolute;
+    left:0px;
+    top:0px;
+}
+
+.sub-menu:hover .subClass{
+    opacity:1;
+    top:100px;
+
+}
+
+
+
+nav .subClass li a{
+    float: none;
+    background-color: steelblue;
+    border-bottom: 3px solid lightblue ;
+    padding: 22px 0px 22px;
+
+}
+
+
+/*-------------------------------
+Banner Section
+-------------------------------*/
+
+
+#bannerHead {
+    /*background-image: url("../Images/banner_main.jpeg");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 360px;
+    background-size: cover;
+    margin: 0px;
+}
+
+
+
+
+.bannerContainer {
+    width: 960px;
+    margin: auto;
+}
+
+
+
+
+
+/*
+-------------------------------
+Main cL Section
+-------------------------------
+*/
+
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    width: 960px;
+    margin: auto;
+}
+
+
+.clLeft {
+    width: 298px;
+    float: left;
+}
+
+
+.list1 {
+    background-color: lightblue;
+    width: 297px;
+}
+
+.list1 a{
+    background-color: lightblue;
+    width: 297px;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.list {
+    color: #333333;
+    width: 297px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+}
+
+
+.list1 a:hover {
+    background-color: steelblue;
+    /*border-bottom: 3px solid steelblue;*/
+}
+
+
+
+
+.mainNav {
+    display: block;
+    width: 297px;
+    /*display: flex;*/
+    flex-direction: row;
+}
+
+
+
+.cRight {
+    width: 614px;
+    float: right;
+    margin-left: 49px;
+}
+
+main h2 {
+    font-family: 'Muli', sans-serif;
+    border-bottom: 1px dotted #333333;
+    font-size: 26px;
+    color: black;
+    margin-top: 23px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+
+
+main h3{
+    font-family: 'Muli', sans-serif;
+    border-bottom: 1px dotted #333333;
+    font-size: 26px;
+    color: black;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+
+#paraMain1 {
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: justify;
+    letter-spacing: 0.4px;
+    line-height: 1.2em;
+    height: 120px;
+
+}
+
+
+.paraMain {
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+.paraMainLeaders {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+/*.rightImg {
+    margin-top: 18px;
+}*/
+
+#picContainer {
+    /*background-image: url("../Images/buckingham-palace.jpeg");*/
+    margin-top: 40px;
+    width: 613px;
+    height: 330px;
+}
+
+
+
+
+/*-------------------------------
+translate button Section
+-------------------------------*/
+
+.translateBtn {
+    width: 630px;
+    /*margin-left: -3px;
+    margin-top: 10px;*/
+}
+
+
+.translateBtn button {
+    width: 90px;
+}
+
+.mRight {
+    margin-right: -13px;
+}
+
+.btn {
+    font-size: 10px;
+    text-transform: capitalize;
+    /*border: none;*/
+    border-radius: 3px;
+    background-color: #f1f2f3;
+    box-shadow: 0px 2px 4px #000;
+    font-weight: lighter;
+    outline: none;
+    cursor: pointer;
+    margin: 15px;
+    padding: 9px 28px;
+}
+
+
+
+/*!*-------------------------------
+Find Us Section
+-------------------------------*!*/
+
+img {
+    margin-top: -241px;
+
+}
+
+
+
+
+
+
+
+.joinUs {
+    background-color: lightblue;
+    margin-top: -56px;
+    /*height: 60px;*/
+    cursor: pointer;
+    /*display: block;*/
+}
+
+
+.joinUs p {
+    font-size: 18px;
+    text-align: center;
+    color: #333333;
+    padding: 21px 0px;
+    width: 297px;
+    text-transform: uppercase;
+
+}
+
+
+.findUsHeader{
+    background-color: lightblue;
+    /*margin-top: 0px;
+    height: 60px;*/
+}
+
+
+
+.findUsHeader p {
+    font-size: 18px;
+    text-align: center;
+    color: #333333;
+    padding: 21px 0px;
+    width: 297px;
+    text-transform: uppercase;
+
+}
+
+
+.mapCont {
+    width: 297px;
+
+}
+
+
+/*!*-------------------------------
+footer Section
+-------------------------------*!*/
+
+footer {
+    background-color: steelblue;
+    margin-top: 50px;
+}
+
+footer p {
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    text-transform: capitalize;
+    padding: 37px;
+    font-weight: 500;
+    margin-right: 300px
+}
+
+
+
+/*!*----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------
+General Section
+-------------------------------*/
+
+
+/*-------------------------------
+General Section
+-------------------------------*/
+
+
+/*-------------------------------
+General Section
+-------------------------------*/
+
+
+/*-------------------------------
+General Section
+-------------------------------*/
+
+
+/*-------------------------------
+General Section
+-------------------------------*/
+
+
+/*-------------------------------
+General Section
+-------------------------------*/
+
+/*-------------------------------
+General Section
+-------------------------------*/
+
+
+/*-------------------------------
+General Section
+-------------------------------*/
+
+
+/*-------------------------------
+General Section
+-------------------------------*/
